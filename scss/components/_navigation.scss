@@ -1,0 +1,152 @@
+.nav__link-text--margin:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav__cont-text--margin:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav--size {
+    margin-left: 93px;
+}
+
+.nav__link-text {
+    display: flex;
+    align-items: center;
+}
+
+.nav__link-form {
+    color: var(--brand-color);
+    font-weight: 500;
+
+    line-height: 1.2;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav__link-form:hover {
+    color: var(--accent-color);
+}
+
+.nav__link-form:focus {
+    color: var(--accent-color);
+}
+
+.nav__link-form:active {
+    color: var(--accent-color);
+}
+
+.nav__link-activ {
+    color: var(--accent-color);
+}
+
+.nav__link-activ::after {
+    content: '';
+    display: block;
+    width: auto;
+    height: 4px;
+
+    background: var(--accent-color);
+    border-radius: 2px;
+
+    position: relative;
+    bottom: -26px;
+
+    overflow: hidden;
+}
+
+.nav--cont-margin {
+    margin-left: auto;
+}
+
+.nav__cont-text {
+    display: flex;
+    align-items: center;
+}
+
+.nav__cont-mail {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration: none;
+    color: var(--letter-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav__cont-mail:hover {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.nav__cont-mail:focus {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.nav__cont-mail:focus .nav__cont-icon--form {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.nav__cont-mail:hover .nav__cont-icon--form {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.nav__cont-tel {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration: none;
+    color: var(--letter-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav__cont-tel:focus {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.nav__cont-tel:hover {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.nav__cont-tel:focus .nav__cont-icon--form {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.nav__cont-tel:hover .nav__cont-icon--form {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.nav__cont-icon--form {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: var(--letter-color);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
