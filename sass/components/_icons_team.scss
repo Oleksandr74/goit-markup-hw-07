@@ -1,0 +1,36 @@
+.icons-team {
+@extend %flex;
+    margin-top: 16px;
+    padding-bottom: 30px;
+}
+.icons-team__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+@extend %position;
+    display: flex;
+
+    transition-property: fill, background-color;
+@extend %transition;
+
+    &:hover,
+    &:focus {
+     background-color: var(--accent-color);
+}
+}
+
+.icons-team__picture {
+    width: 20px;
+    height: 20px;
+    fill: var(--icon-color);
+
+    transition-property: fill;
+ @extend %transition;
+
+    &:hover,
+    &:focus {
+    fill: var(--basic-color);
+}
+}
+
+

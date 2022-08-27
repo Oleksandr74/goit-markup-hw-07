@@ -13,9 +13,7 @@
 }
 
 .modal__close-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@extend %flex;
     position: absolute;
     top: 8px;
     right: 8px;
@@ -34,14 +32,13 @@
     height: 17px;
     width: 17px;
     transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__close-button--icons-size:hover {
+    @extend %transition;
+&:hover {
     fill: var(--link-color);
 }
 
-.modal__close-button--icons-size:focus {
+&:focus {
     fill: var(--link-color);
+}    
 }
+

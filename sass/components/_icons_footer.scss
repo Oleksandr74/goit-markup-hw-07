@@ -1,0 +1,32 @@
+.icons-footer {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.icons-footer__icon {
+    width: 44px;
+    height: 44px;
+    fill: var(--basic-color);
+@extend %position;
+    padding: 25%;
+}
+
+.icon-footer__link {
+    display: flex;
+    background-color: var(--icon-footer-link-background-color);
+    border-radius: 50%;
+
+    transition-property: background-color;
+    @extend %transition;
+&:hover,
+&:focus {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    background-position: center;
+}
+}
+.icon-footer__form:not(:last-child) {
+    margin-right: 10px;
+}

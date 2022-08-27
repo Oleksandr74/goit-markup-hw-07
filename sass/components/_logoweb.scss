@@ -1,7 +1,4 @@
-.logo-webstudio--footer {
-    color: var(--basic-color);
-}
-.logo-webstudio {
+.logo {
     font-family: var(--font-family-logo);
     font-weight: 700;
     font-size: 26px;
@@ -10,11 +7,11 @@
     color: var(--accent-color);
     text-decoration: none;
 }
-
-.logo-webstudio--header {
-    color: var(--black-color);
+.logo__footer {
+    color: var(--basic-color);
 }
-.logo-webstudio--header {
+.logo__header {
     font-family: var(--font-family-logo);
     font-weight: 700px;
+    color: var(--black-color);
 }

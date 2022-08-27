@@ -1,0 +1,25 @@
+.button-hero--position {
+    text-align: center;
+}
+
+.button-hero {
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    text-align: center;
+    border: none;
+  &:hover {
+        background-color: var(--link-color);
+    }
+    
+}
+
+.button-hero--text {
+    color: var(--basic-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    text-align: center;
+    margin: 0px;
+    padding: 10px 32px 10px 32px;
+}
