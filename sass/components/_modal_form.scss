@@ -12,6 +12,9 @@
 &:focus-within {
     border: 1px solid var(--link-color);
 }
+&:hover {
+    border: 1px solid var(--link-color);
+}
 }
 .form__field-icons {
     position: absolute;
@@ -24,6 +27,9 @@
     transition-property: fill;
     @extend %transition;
 .form__field-inner:focus-within>& {
+    fill: var(--link-color);
+}
+.form__field-inner:hover>& {
     fill: var(--link-color);
 }
 }
@@ -44,6 +50,9 @@
     transition-property: border;
     @extend %transition;
 &:focus {
+    border: 1px solid var(--accent-color);
+}
+&:hover {
     border: 1px solid var(--accent-color);
 }
 }

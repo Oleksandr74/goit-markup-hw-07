@@ -1,7 +1,10 @@
 /*CHECKBOX*/
 .checkbox__lable {
-%flex
-& .checkbox__icon-link {
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checkbox__lable .checkbox__icon-link {
     border: 2px solid var(--brand-color);
     border-radius: 2px;
     background-color: var(--basic-color);
@@ -11,7 +14,7 @@
     transition-property: background-color, border;
     @extend %transition;
 }
-}
+
 .checkbox__icon {
     width: 16px;
     height: 15px;
@@ -20,12 +23,12 @@
     @extend %transition;
 }
 
-.checkbox__input:checked+.checkbox__lable .checkbox__icon-link {
+.checkbox__input:checked + .checkbox__lable .checkbox__icon-link {
     background-color: var(--accent-color);
     border: none;
 }
 
-.checkbox__input:checked+.checkbox__lable .checkbox__icon-link .checkbox__icon {
+.checkbox__input:checked + .checkbox__lable .checkbox__icon-link .checkbox__icon {
     fill: var(--basic-color);
 }
 

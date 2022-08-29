@@ -1,19 +1,26 @@
-.button-hero--position {
-    text-align: center;
-}
-
 .button-hero {
+    width: 200px;
+    height: 50px;
     background-color: var(--accent-color);
     border-radius: 4px;
-    text-align: center;
+   
     border: none;
+    margin-left: 460px;
+    margin-right: 460px;
+
+        color: var(--basic-color);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.88;
+            padding: 10px 32px 10px 32px;
+
   &:hover {
         background-color: var(--link-color);
     }
     
 }
 
-.button-hero--text {
+/*.button-hero--text {
     color: var(--basic-color);
     font-weight: 700;
     font-size: 16px;
@@ -22,4 +29,4 @@
     text-align: center;
     margin: 0px;
     padding: 10px 32px 10px 32px;
-}
+}*/

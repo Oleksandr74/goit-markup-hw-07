@@ -1,9 +1,13 @@
-.icons-team {
+.social {
+    list-style: none;
+        padding-left: 0;
+        margin: 0;
 @extend %flex;
     margin-top: 16px;
     padding-bottom: 30px;
+    gap: 10px;
 }
-.icons-team__link {
+.social__link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -19,7 +23,7 @@
 }
 }
 
-.icons-team__picture {
+.social__item {
     width: 20px;
     height: 20px;
     fill: var(--icon-color);
@@ -31,6 +35,12 @@
     &:focus {
     fill: var(--basic-color);
 }
+}
+.social__link:hover .social__item {
+    fill: var(--basic-color);
+}
+.social__link:focus .social__item {
+    fill: var(--basic-color);
 }
 
 

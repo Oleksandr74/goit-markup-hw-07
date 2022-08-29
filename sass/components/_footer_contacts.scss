@@ -7,6 +7,13 @@
 
     transition-property: color;
     @extend %transition;
+    &:hover {
+            color: var(--accent-color);
+        }
+    
+        &:focus {
+            color: var(--accent-color);
+        }
 }
 .contact-footer__form {
     margin-top: 20px;
@@ -21,6 +28,8 @@
     text-decoration: none;
     color: var(--basic-color);
    &:hover {
-    color: var(--accent-color);
+    color: var(--accent-color);}
+&:focus {
+        color: var(--accent-color);
 } 
 }
